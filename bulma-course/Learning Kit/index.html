@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bulma CSS -->
+		<link rel="stylesheet" href="css/bulma.css">
+
+		<title>Bulma Learning Kit - Home</title>
+	</head>
+	<body>
+		
+		<header>
+			<nav class="navbar is-primary" role="navigation" aria-label="Main navigation">
+				<div class="container">
+					<div class="navbar-brand">
+						<a href="index.html" class="navbar-item">Bulma Learning Kit</a>
+						<div class="navbar-burger" data-target="navbar">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="navbar-menu" id="navbar">
+						<div class="navbar-start">
+							<div class="navbar-item has-dropdown is-hoverable">
+								<a href="#0" class="navbar-link">Modifiers</a>
+								<ul class="navbar-dropdown is-boxed">
+									<a href="reference/helpers.html" class="navbar-item">Helpers</a>
+									<a href="reference/responsive-helpers.html" class="navbar-item">Responsive Helpers</a>
+									<a href="reference/color-helpers.html" class="navbar-item">Color Helpers</a>
+									<a href="reference/typography-helpers.html" class="navbar-item">Typography Helpers</a>
+								</ul>
+							</div>
+							<div class="navbar-item has-dropdown is-hoverable">
+								<a href="#0" class="navbar-link">Layout</a>
+								<ul class="navbar-dropdown is-boxed">
+									<a href="reference/columns.html" class="navbar-item">Columns</a>
+									<a href="reference/container.html" class="navbar-item">Container</a>
+									<a href="reference/hero.html" class="navbar-item">Hero</a>
+									<a href="reference/section.html" class="navbar-item">Section</a>
+									<a href="reference/footer.html" class="navbar-item">Footer</a>
+									<a href="reference/level.html" class="navbar-item">Level</a>
+									<a href="reference/media-object.html" class="navbar-item">Media Object</a>
+									<a href="reference/tiles.html" class="navbar-item">Tiles</a>
+								</ul>
+							</div>
+							<div class="navbar-item has-dropdown is-hoverable">
+								<a href="#0" class="navbar-link">Forms</a>
+								<ul class="navbar-dropdown is-boxed">
+									<a href="reference/general.html" class="navbar-item">General</a>
+									<a href="reference/input.html" class="navbar-item">Input</a>
+									<a href="reference/textarea.html" class="navbar-item">Textarea</a>
+									<a href="reference/select.html" class="navbar-item">Select</a>
+									<a href="reference/checkbox-radio.html" class="navbar-item">Checkbox &amp; Radio Button</a>
+									<a href="reference/file.html" class="navbar-item">File</a>
+								</ul>
+							</div>
+							<div class="navbar-item has-dropdown is-hoverable">
+								<a href="#0" class="navbar-link">Elements</a>
+								<ul class="navbar-dropdown is-boxed">
+									<a href="reference/box.html" class="navbar-item">Box</a>
+									<a href="reference/button.html" class="navbar-item">Button</a>
+									<a href="reference/content.html" class="navbar-item">Content</a>
+									<a href="reference/delete.html" class="navbar-item">Delete</a>
+									<a href="reference/icon.html" class="navbar-item">Icon</a>
+									<a href="reference/image.html" class="navbar-item">Image</a>
+									<a href="reference/notification.html" class="navbar-item">Notification</a>
+									<a href="reference/progress.html" class="navbar-item">Progress</a>
+									<a href="reference/table.html" class="navbar-item">Table</a>
+									<a href="reference/tag.html" class="navbar-item">Tag</a>
+									<a href="reference/title.html" class="navbar-item">Title</a>
+								</ul>
+							</div>
+							<div class="navbar-item has-dropdown is-hoverable">
+								<a href="#0" class="navbar-link">Components</a>
+								<ul class="navbar-dropdown is-boxed">
+									<a href="reference/breadcrumb.html" class="navbar-item">Breadcrumb</a>
+									<a href="reference/card.html" class="navbar-item">Card</a>
+									<a href="reference/dropdown.html" class="navbar-item">Dropdown</a>
+									<a href="reference/menu.html" class="navbar-item">Menu</a>
+									<a href="reference/message.html" class="navbar-item">Message</a>
+									<a href="reference/modal.html" class="navbar-item">Modal</a>
+									<a href="reference/navbar.html" class="navbar-item">Navbar</a>
+									<a href="reference/pagination.html" class="navbar-item">Pagination</a>
+									<a href="reference/panel.html" class="navbar-item">Panel</a>
+									<a href="reference/tabs.html" class="navbar-item">Tabs</a>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section class="section">
+			<div class="container">
+				<h1 class="title">Bulma Learning Kit</h1>
+				<hr>
+				<main class="content">
+
+					<p class="subtitle">Welcome to this custom made Bulma Learning Kit.</p>
+					<p>This learning kit consists of the following two sections:</p>
+					<ul>
+						<li>Reference</li>
+						<li>Practice</li>
+					</ul>
+					<p>Choose a topic from the dropdown menu. You'll then go to that topic's reference page. From there you can toggle between the two different views: reference and practice.</p>
+					<p>At anytime you can go to another topic from the dropdown menu.</p>
+
+					<script type="text/javascript">
+						document.addEventListener('DOMContentLoaded', function () {
+
+					  // Get all "navbar-burger" elements
+					  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+					  // Check if there are any navbar burgers
+					  if ($navbarBurgers.length > 0) {
+
+					    // Add a click event on each of them
+					    $navbarBurgers.forEach(function ($el) {
+					      $el.addEventListener('click', function () {
+
+					        // Get the target from the "data-target" attribute
+					        var target = $el.dataset.target;
+					        var $target = document.getElementById(target);
+
+					        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+					        $el.classList.toggle('is-active');
+					        $target.classList.toggle('is-active');
+
+					      });
+					    });
+					  }
+
+					});
+					</script>
+
+				</main>
+			</div>
+		</section>
+	</body>
+</html>

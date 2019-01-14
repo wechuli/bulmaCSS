@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bulma CSS -->
+		<link rel="stylesheet" href="../css/bulma.css">
+
+		<title>Bulma Learning Kit - Reference - Components: Modal</title>
+	</head>
+	<body>
+		
+		<header>
+			<nav class="navbar is-primary" role="navigation" aria-label="Main navigation">
+				<div class="container">
+					<div class="navbar-brand">
+						<a href="../index.html" class="navbar-item">Bulma Learning Kit</a>
+						<div class="navbar-burger" data-target="navbar">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="navbar-menu" id="navbar">
+						<div class="navbar-start">
+							<div class="navbar-item has-dropdown is-hoverable">
+								<a href="#0" class="navbar-link">Modifiers</a>
+								<ul class="navbar-dropdown is-boxed">
+									<a href="helpers.html" class="navbar-item">Helpers</a>
+									<a href="responsive-helpers.html" class="navbar-item">Responsive Helpers</a>
+									<a href="color-helpers.html" class="navbar-item">Color Helpers</a>
+									<a href="typography-helpers.html" class="navbar-item">Typography Helpers</a>
+								</ul>
+							</div>
+							<div class="navbar-item has-dropdown is-hoverable">
+								<a href="#0" class="navbar-link">Layout</a>
+								<ul class="navbar-dropdown is-boxed">
+									<a href="columns.html" class="navbar-item">Columns</a>
+									<a href="container.html" class="navbar-item">Container</a>
+									<a href="hero.html" class="navbar-item">Hero</a>
+									<a href="section.html" class="navbar-item">Section</a>
+									<a href="footer.html" class="navbar-item">Footer</a>
+									<a href="level.html" class="navbar-item">Level</a>
+									<a href="media-object.html" class="navbar-item">Media Object</a>
+									<a href="tiles.html" class="navbar-item">Tiles</a>
+								</ul>
+							</div>
+							<div class="navbar-item has-dropdown is-hoverable">
+								<a href="#0" class="navbar-link">Forms</a>
+								<ul class="navbar-dropdown is-boxed">
+									<a href="general.html" class="navbar-item">General</a>
+									<a href="input.html" class="navbar-item">Input</a>
+									<a href="textarea.html" class="navbar-item">Textarea</a>
+									<a href="select.html" class="navbar-item">Select</a>
+									<a href="checkbox-radio.html" class="navbar-item">Checkbox &amp; Radio Button</a>
+									<a href="file.html" class="navbar-item">File</a>
+								</ul>
+							</div>
+							<div class="navbar-item has-dropdown is-hoverable">
+								<a href="#0" class="navbar-link">Elements</a>
+								<ul class="navbar-dropdown is-boxed">
+									<a href="box.html" class="navbar-item">Box</a>
+									<a href="button.html" class="navbar-item">Button</a>
+									<a href="content.html" class="navbar-item">Content</a>
+									<a href="delete.html" class="navbar-item">Delete</a>
+									<a href="icon.html" class="navbar-item">Icon</a>
+									<a href="image.html" class="navbar-item">Image</a>
+									<a href="notification.html" class="navbar-item">Notification</a>
+									<a href="progress.html" class="navbar-item">Progress</a>
+									<a href="table.html" class="navbar-item">Table</a>
+									<a href="tag.html" class="navbar-item">Tag</a>
+									<a href="title.html" class="navbar-item">Title</a>
+								</ul>
+							</div>
+							<div class="navbar-item has-dropdown is-hoverable">
+								<a href="#0" class="navbar-link">Components</a>
+								<ul class="navbar-dropdown is-boxed">
+									<a href="breadcrumb.html" class="navbar-item">Breadcrumb</a>
+									<a href="card.html" class="navbar-item">Card</a>
+									<a href="dropdown.html" class="navbar-item">Dropdown</a>
+									<a href="menu.html" class="navbar-item">Menu</a>
+									<a href="message.html" class="navbar-item">Message</a>
+									<a href="modal.html" class="navbar-item">Modal</a>
+									<a href="navbar.html" class="navbar-item">Navbar</a>
+									<a href="pagination.html" class="navbar-item">Pagination</a>
+									<a href="panel.html" class="navbar-item">Panel</a>
+									<a href="tabs.html" class="navbar-item">Tabs</a>
+								</ul>
+							</div>
+						</div>
+						<div class="navbar-end">
+							<div class="buttons has-addons">
+								<a href="../reference/modal.html" class="button is-dark">Reference</a>
+								<a href="../practice/modal.html" class="button is-light">Practice</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section class="section">
+			<div class="container">
+				<h1 class="title">Components: Modal</h1>
+				<hr>
+				<main>
+					
+					<h2 class="subtitle has-text-weight-bold">Default modal</h2>
+					<button class="button is-primary" id="js-default-modal-trigger">Open default modal</button>
+
+					<div class="modal" id="js-default-modal">
+						<div class="modal-background"></div>
+						<div class="modal-content">
+							<div class="box">
+								<h2 class="title has-text-centered">Modal title</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed pulvinar nulla. In congue ultricies nunc, a porttitor odio finibus vitae. Nulla aliquam risus dolor, nec bibendum mauris tincidunt ut. Donec finibus orci dolor, vel viverra tortor sagittis ut. Curabitur lectus enim, maximus et condimentum eget, condimentum vitae erat. Cras rutrum nisi ligula, et tristique augue aliquet eget. Fusce ut congue justo. Vestibulum tempor nisi a aliquet suscipit.</p>
+							</div>
+						</div>
+						<button class="modal-close is-large" aria-label="Close" id="js-default-modal-close"></button>
+					</div>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Modal card</h2>
+					<button class="button is-primary" id="js-card-modal-trigger">Open modal card</button>
+
+					<div class="modal" id="js-card-modal">
+						<div class="modal-background"></div>
+						<div class="modal-card">
+							<header class="modal-card-head">
+								<h2 class="modal-card-title">Modal card title</h2>
+								<button class="delete js-card-modal-close" aria-label="Close"></button>
+							</header>
+							<section class="modal-card-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed pulvinar nulla. In congue ultricies nunc, a porttitor odio finibus vitae. Nulla aliquam risus dolor, nec bibendum mauris tincidunt ut. Donec finibus orci dolor, vel viverra tortor sagittis ut. Curabitur lectus enim, maximus et condimentum eget, condimentum vitae erat. Cras rutrum nisi ligula, et tristique augue aliquet eget. Fusce ut congue justo. Vestibulum tempor nisi a aliquet suscipit.</p>
+							</section>
+							<footer class="modal-card-foot">
+								<button class="button is-success js-card-modal-close">Confirm</button>
+								<button class="button js-card-modal-close">Cancel</button>
+							</footer>
+						</div>
+					</div>
+
+					<script type="text/javascript">
+						document.addEventListener('DOMContentLoaded', function () {
+							var defaultModal = document.getElementById('js-default-modal');
+							var defaultModalTrigger = document.getElementById('js-default-modal-trigger');
+							var defaultModalClose = document.getElementById('js-default-modal-close');
+							
+							defaultModalTrigger.addEventListener('click', function () {
+								defaultModal.classList.toggle('is-active');
+							})
+
+							defaultModalClose.addEventListener('click', function () {
+								defaultModal.classList.toggle('is-active');
+							})
+
+							var cardModal = document.getElementById('js-card-modal');
+							var cardModalTrigger = document.getElementById('js-card-modal-trigger');
+							var cardModalClose = document.getElementsByClassName('js-card-modal-close');
+							
+							cardModalTrigger.addEventListener('click', function () {
+								cardModal.classList.toggle('is-active');
+							})
+
+							Array.prototype.forEach.call(cardModalClose, function(el, i){
+								el.addEventListener('click', function () {
+									cardModal.classList.toggle('is-active');	
+								})
+							});
+
+						});
+					</script>
+
+				</main>
+			</div>
+		</section>
+
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function () {
+
+		  // Get all "navbar-burger" elements
+		  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		  // Check if there are any navbar burgers
+		  if ($navbarBurgers.length > 0) {
+
+		    // Add a click event on each of them
+		    $navbarBurgers.forEach(function ($el) {
+		      $el.addEventListener('click', function () {
+
+		        // Get the target from the "data-target" attribute
+		        var target = $el.dataset.target;
+		        var $target = document.getElementById(target);
+
+		        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+		        $el.classList.toggle('is-active');
+		        $target.classList.toggle('is-active');
+
+		      });
+		    });
+		  }
+
+		});
+		</script>
+
+	</body>
+</html>

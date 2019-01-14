@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bulma CSS -->
+		<link rel="stylesheet" href="../css/bulma.css">
+
+		<title>Bulma Learning Kit - Reference - Forms: General</title>
+	</head>
+	<body>
+		
+		<header>
+			<nav class="navbar is-primary" role="navigation" aria-label="Main navigation">
+				<div class="container">
+					<div class="navbar-brand">
+						<a href="../index.html" class="navbar-item">Bulma Learning Kit</a>
+						<div class="navbar-burger" data-target="navbar">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="navbar-menu" id="navbar">
+						<div class="navbar-start">
+							<div class="navbar-item has-dropdown is-hoverable">
+								<a href="#0" class="navbar-link">Modifiers</a>
+								<ul class="navbar-dropdown is-boxed">
+									<a href="helpers.html" class="navbar-item">Helpers</a>
+									<a href="responsive-helpers.html" class="navbar-item">Responsive Helpers</a>
+									<a href="color-helpers.html" class="navbar-item">Color Helpers</a>
+									<a href="typography-helpers.html" class="navbar-item">Typography Helpers</a>
+								</ul>
+							</div>
+							<div class="navbar-item has-dropdown is-hoverable">
+								<a href="#0" class="navbar-link">Layout</a>
+								<ul class="navbar-dropdown is-boxed">
+									<a href="columns.html" class="navbar-item">Columns</a>
+									<a href="container.html" class="navbar-item">Container</a>
+									<a href="hero.html" class="navbar-item">Hero</a>
+									<a href="section.html" class="navbar-item">Section</a>
+									<a href="footer.html" class="navbar-item">Footer</a>
+									<a href="level.html" class="navbar-item">Level</a>
+									<a href="media-object.html" class="navbar-item">Media Object</a>
+									<a href="tiles.html" class="navbar-item">Tiles</a>
+								</ul>
+							</div>
+							<div class="navbar-item has-dropdown is-hoverable">
+								<a href="#0" class="navbar-link">Forms</a>
+								<ul class="navbar-dropdown is-boxed">
+									<a href="general.html" class="navbar-item">General</a>
+									<a href="input.html" class="navbar-item">Input</a>
+									<a href="textarea.html" class="navbar-item">Textarea</a>
+									<a href="select.html" class="navbar-item">Select</a>
+									<a href="checkbox-radio.html" class="navbar-item">Checkbox &amp; Radio Button</a>
+									<a href="file.html" class="navbar-item">File</a>
+								</ul>
+							</div>
+							<div class="navbar-item has-dropdown is-hoverable">
+								<a href="#0" class="navbar-link">Elements</a>
+								<ul class="navbar-dropdown is-boxed">
+									<a href="box.html" class="navbar-item">Box</a>
+									<a href="button.html" class="navbar-item">Button</a>
+									<a href="content.html" class="navbar-item">Content</a>
+									<a href="delete.html" class="navbar-item">Delete</a>
+									<a href="icon.html" class="navbar-item">Icon</a>
+									<a href="image.html" class="navbar-item">Image</a>
+									<a href="notification.html" class="navbar-item">Notification</a>
+									<a href="progress.html" class="navbar-item">Progress</a>
+									<a href="table.html" class="navbar-item">Table</a>
+									<a href="tag.html" class="navbar-item">Tag</a>
+									<a href="title.html" class="navbar-item">Title</a>
+								</ul>
+							</div>
+							<div class="navbar-item has-dropdown is-hoverable">
+								<a href="#0" class="navbar-link">Components</a>
+								<ul class="navbar-dropdown is-boxed">
+									<a href="breadcrumb.html" class="navbar-item">Breadcrumb</a>
+									<a href="card.html" class="navbar-item">Card</a>
+									<a href="dropdown.html" class="navbar-item">Dropdown</a>
+									<a href="menu.html" class="navbar-item">Menu</a>
+									<a href="message.html" class="navbar-item">Message</a>
+									<a href="modal.html" class="navbar-item">Modal</a>
+									<a href="navbar.html" class="navbar-item">Navbar</a>
+									<a href="pagination.html" class="navbar-item">Pagination</a>
+									<a href="panel.html" class="navbar-item">Panel</a>
+									<a href="tabs.html" class="navbar-item">Tabs</a>
+								</ul>
+							</div>
+						</div>
+						<div class="navbar-end">
+							<div class="buttons has-addons">
+								<a href="../reference/general.html" class="button is-dark">Reference</a>
+								<a href="../practice/general.html" class="button is-light">Practice</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section class="section">
+			<div class="container">
+				<h1 class="title">Forms: General</h1>
+				<hr>
+				<main>
+					
+					<h2 class="subtitle has-text-weight-bold">Form controls: Wrap form controls in a .control container</h2>
+					<div class="control">
+						<input type="text" class="input" id="textInput" placeholder="Text input">
+					</div>
+					<div class="control">
+						<div class="select">
+							<select>
+								<option vaiue="">Default select</option>
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+							</select>
+						</div>
+					</div>
+					<div class="control">
+						<textarea class="textarea" placeholder="Write your message here..."></textarea>
+					</div>
+					<div class="control">
+						<button type="submit" class="button is-primary">Submit</button>
+					</div>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Form fields: Wrap label/input/help text/button in a .field container</h2>
+					<form>
+						<div class="field">
+							<label class="label" for="textInput">Text input</label>
+							<div class="control">
+								<input type="text" class="input" id="textInput" placeholder="Text input">
+							</div>
+							<p class="help">Descriptive help text for the input element.</p>
+						</div>
+						<div class="field">
+							<label class="label" for="numberInput">Number input</label>
+							<div class="control">
+								<input type="number" class="input" id="numberInput" placeholder="1234">
+							</div>
+							<p class="help">Descriptive help text for the input element.</p>
+						</div>
+						<div class="field">
+							<div class="control">
+								<button type="submit" class="button is-primary">Submit</button>
+							</div>
+						</div>
+					</form>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Form addon: button</h2>
+					<div class="field has-addons">
+						<div class="control">
+							<input type="text" class="input" placeholder="Keyword">
+						</div>
+						<div class="control">
+							<button type="button" class="button is-primary">Search</button>
+						</div>
+					</div>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Form addon: static button</h2>
+					<div class="field has-addons">
+						<div class="control">
+							<input type="email" class="input" placeholder="Email address">
+						</div>
+						<div class="control">
+							<button type="button" class="button is-static">@domain.com</button>
+						</div>
+					</div>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Form addon: select and button</h2>
+					<div class="field has-addons">
+						<div class="control">
+							<div class="select">
+								<select>
+									<option vaiue="€">€</option>
+									<option value="$">$</option>
+									<option value="£">£</option>
+								</select>
+							</div>
+						</div>
+						<div class="control">
+							<input type="number" class="input" placeholder="1234">
+						</div>
+						<div class="control">
+							<button type="button" class="button is-primary">Transfer</button>
+						</div>
+					</div>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Form addon: select and button with expanded input</h2>
+					<div class="field has-addons">
+						<div class="control">
+							<div class="select">
+								<select>
+									<option vaiue="€">€</option>
+									<option value="$">$</option>
+									<option value="£">£</option>
+								</select>
+							</div>
+						</div>
+						<div class="control is-expanded">
+							<input type="number" class="input" placeholder="1234">
+						</div>
+						<div class="control">
+							<button type="button" class="button is-primary">Transfer</button>
+						</div>
+					</div>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Form addon: button with expanded select</h2>
+					<div class="field has-addons">
+						<div class="control is-expanded">
+							<div class="select is-fullwidth">
+								<select>
+									<option vaiue="message1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</option>
+									<option value="message2">Nunc feugiat posuere metus eget venenatis.</option>
+									<option value="message3">Cras lacinia purus id enim gravida, at accumsan purus cursus.</option>
+									<option value="message4">Sed maximus, velit nec ultricies malesuada, est nibh ullamcorper tellus, tincidunt egestas urna nibh id magna.</option>
+									<option value="message5">Ut efficitur auctor nisi, eu suscipit sapien blandit a.</option>
+								</select>
+							</div>
+						</div>
+						<div class="control">
+							<button type="button" class="button is-primary">Send message</button>
+						</div>
+					</div>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Centered form addon: select and button</h2>
+					<div class="field has-addons has-addons-centered">
+						<div class="control">
+							<div class="select">
+								<select>
+									<option vaiue="€">€</option>
+									<option value="$">$</option>
+									<option value="£">£</option>
+								</select>
+							</div>
+						</div>
+						<div class="control">
+							<input type="number" class="input" placeholder="1234">
+						</div>
+						<div class="control">
+							<button type="button" class="button is-primary">Transfer</button>
+						</div>
+					</div>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Right-aligned form addon: select and button</h2>
+					<div class="field has-addons has-addons-right">
+						<div class="control">
+							<div class="select">
+								<select>
+									<option vaiue="€">€</option>
+									<option value="$">$</option>
+									<option value="£">£</option>
+								</select>
+							</div>
+						</div>
+						<div class="control">
+							<input type="number" class="input" placeholder="1234">
+						</div>
+						<div class="control">
+							<button type="button" class="button is-primary">Transfer</button>
+						</div>
+					</div>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Form group</h2>
+					<div class="field is-grouped">
+						<div class="control">
+							<button type="submit" class="button is-primary">Submit</button>
+						</div>
+						<div class="control">
+							<button type="reset" class="button is-danger">Reset</button>
+						</div>
+					</div>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Centered form group</h2>
+					<div class="field is-grouped is-grouped-centered">
+						<div class="control">
+							<button type="submit" class="button is-primary">Submit</button>
+						</div>
+						<div class="control">
+							<button type="reset" class="button is-danger">Reset</button>
+						</div>
+					</div>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Right-aligned form group</h2>
+					<div class="field is-grouped is-grouped-right">
+						<div class="control">
+							<button type="submit" class="button is-primary">Submit</button>
+						</div>
+						<div class="control">
+							<button type="reset" class="button is-danger">Reset</button>
+						</div>
+					</div>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Form group with expaned input</h2>
+					<div class="field is-grouped">
+						<div class="control is-expanded">
+							<input type="text" class="input" placeholder="Keyword">
+						</div>
+						<div class="control">
+							<button type="button" class="button is-primary">Search</button>
+						</div>
+					</div>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Form group with multiple lines</h2>
+					<div class="field is-grouped is-grouped-multiline">
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+						<div class="control">
+							<button type="submit" class="button">Button</button>
+						</div>
+					</div>
+					<!-- Alternatively use the .buttons class to create a multiline list of buttons (see "Elements - Button") -->
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Horizontal form</h2>
+					<div class="field is-horizontal">
+						<div class="field-label is-normal">
+							<label class="label">Label</label>
+						</div>
+						<div class="field-body">
+							<div class="field">
+								<div class="control">
+									<input type="text" class="input" id="textInput" placeholder="Text input">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="field is-horizontal">
+						<div class="field-label is-normal">
+							<label class="label">Long label</label>
+						</div>
+						<div class="field-body">
+							<div class="field">
+								<div class="control">
+									<div class="select">
+										<select>
+											<option vaiue="">Default select</option>
+											<option value="1">Option 1</option>
+											<option value="2">Option 2</option>
+											<option value="3">Option 3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="field is-horizontal">
+						<div class="field-label is-normal">
+							<label class="label">Even longer label</label>
+						</div>
+						<div class="field-body">
+							<div class="field">
+								<div class="control">
+									<textarea class="textarea" placeholder="Write your message here..."></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="field is-horizontal">
+						<div class="field-label">
+							<!-- Leave empty to provide spacing -->
+						</div>
+						<div class="field-body">
+							<div class="field">
+								<div class="control">
+									<button type="submit" class="button is-primary">Submit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Vertical alignment for different label and input sizes</h2>
+					<h2 class="subtitle has-text-weight-bold">Small label and input</h2>
+					<div class="field is-horizontal">
+						<div class="field-label is-small">
+							<label class="label">Small</label>
+						</div>
+						<div class="field-body">
+							<div class="field">
+								<div class="control">
+									<input type="text" class="input is-small" id="textInput" placeholder="Text input">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Normal label and input</h2>
+					<div class="field is-horizontal">
+						<div class="field-label is-normal">
+							<label class="label">Normal</label>
+						</div>
+						<div class="field-body">
+							<div class="field">
+								<div class="control">
+									<input type="text" class="input" id="textInput" placeholder="Text input">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Medium label and input</h2>
+					<div class="field is-horizontal">
+						<div class="field-label is-medium">
+							<label class="label">Medium</label>
+						</div>
+						<div class="field-body">
+							<div class="field">
+								<div class="control">
+									<input type="text" class="input is-medium" id="textInput" placeholder="Text input">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<hr>
+					<h2 class="subtitle has-text-weight-bold">Large label and input</h2>
+					<div class="field is-horizontal">
+						<div class="field-label is-large">
+							<label class="label">Large</label>
+						</div>
+						<div class="field-body">
+							<div class="field">
+								<div class="control">
+									<input type="text" class="input is-large" id="textInput" placeholder="Text input">
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</main>
+			</div>
+		</section>
+
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function () {
+
+		  // Get all "navbar-burger" elements
+		  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		  // Check if there are any navbar burgers
+		  if ($navbarBurgers.length > 0) {
+
+		    // Add a click event on each of them
+		    $navbarBurgers.forEach(function ($el) {
+		      $el.addEventListener('click', function () {
+
+		        // Get the target from the "data-target" attribute
+		        var target = $el.dataset.target;
+		        var $target = document.getElementById(target);
+
+		        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+		        $el.classList.toggle('is-active');
+		        $target.classList.toggle('is-active');
+
+		      });
+		    });
+		  }
+
+		});
+		</script>
+
+	</body>
+</html>
