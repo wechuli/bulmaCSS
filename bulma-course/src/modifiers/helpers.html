@@ -5,13 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../../node_modules/bulma/css/bulma.min.css" />
-    <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="../custom.css">
-    <title>Learning Bulma</title>
+    <link
+      rel="stylesheet"
+      href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../custom.css" />
+
+    <title>Modifiers</title>
   </head>
   <body>
-    <main class="container">
-     <button class="button is-primary m-t-md">Button</button>
-    </main>
+    <div class="container m-t-xl">
+      <a href="#" class="button is-primary">Close</a>
+      <a href="#" class="button is-link">Close</a>
+      <a href="#" class="button is-danger is-md">open</a>
+      <a href="#" class="button is-link is-outlined">Close</a>
+    </div>
+    <div class="container m-t-xl">
+      <div class="columns">
+        <div class="column">
+          <a href="#" class="button is-primary is-outlined is pulled-right"
+            >My Button</a
+          >
+        </div>
+        <div class="column">
+          <a href="#" class="button is-primary is-outlined">My Button</a>
+        </div>
+        <div class="column">
+          <a href="#" class="button is-primary is-outlined">My Button</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="columns">
+          <div class="column has-text-info">
+            We can change the color of the text written in this column
+          </div>
+          <div class="column has-text-link">
+            The text of this column has also been changed
+          </div>
+          <div class="column has-background-dark has-text-light">
+            We have changed both the text and the background color of this
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="subtitle has-text-centered">Typography Helpers</h2>
+        <p class="has-text-centered">
+          This element and the one above all have centerd text
+        </p>
+        <p class="has-text-right">
+          This on the other hand has been adjusted to the right
+        </p>
+        <p class="has-text-left">
+          And by default this text has been adjusted to the left
+        </p>
+        <p class="has-text-centered is-lowercase">
+          Paul Wechuli, here we put EVERYTHING in lowercase
+        </p>
+        <p>
+          <span class="is-block has-text-weight-light">
+            We can make the text look light</span
+          >
+          <span class="is-block has-text-weight-normal">
+            We can make the text look just normal</span
+          >
+          <span class="is-block has-text-weight-semibold">
+            We can make the text look semi bold</span
+          >
+          <span class="is-block has-text-weight-bold">
+            We can make the text look bold</span
+          >
+          all the above are span elements with "is-block" class added to make
+          them appear as block elements
+        </p>
+      </div>
+    </div>
   </body>
 </html>
