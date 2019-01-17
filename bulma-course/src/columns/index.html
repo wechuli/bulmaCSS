@@ -17,13 +17,73 @@
   <body>
       <div class="container m-t-md">
 <div class="columns">
-    <div class="column has-background-primary has-text-light has-text-centered">Frist Column</div>
-    <div class="column has-background-primary has-text-light has-text-centered">Second Column</div>
-    <div class="column has-background-primary has-text-light has-text-centered">Third Column</div>
-    <div class="column has-background-primary has-text-light has-text-centered">Fourth Column</div>
+    <div class="column has-background-primary has-text-light has-text-centered has-text-weight-bold m-r-md">Frist Column</div>
+    <div class="column has-background-primary has-text-light has-text-centered m-r-md has-text-weight-bold">Second Column</div>
+    <div class="column has-background-primary has-text-light has-text-centered m-r-md">Third Column</div>
+    <div class="column has-background-primary has-text-light has-text-centered m-r-md">Fourth Column</div>
 </div>
-
+<div class="columns m-t-md has-background-info" style="height:50px">
+  <div class="column is-full has-text-centered has-text-light has-text-weight-bold">Full Collumn</div>
+</div>
+<div class="columns m-t-md " style="height:50px">
+  <div class="column m-r-md has-background-info is-7">Column One</div>
+  <div class="column m-r-md has-background-info">Column Two</div>
+  <div class="column m-r-md has-background-info">Column Three</div>
       </div>
 
+      <div class="columns m-t-md " style="height:50px">
+        <div class="column m-r-md has-background-info is-three-fifths">Is three Fifths</div>
+        <div class="column m-r-md has-background-info">Auto</div>
+        <div class="column m-r-md has-background-info">Auto</div>
+            </div>
+  
+  <div class="columns">
+
+    <div class="column is-half is-offset-one-quarter has-background-dark has-text-light m-t-md has-text-centered has-text-weight-bold radius-large">Using offset </div>
+  </div>
+
+  <div class="columns is-mobile">
+    <div class="column is-narrow">
+      <div class="box" style="width: 200px; height:300px">
+        <p class="title is-5">Narrow Column</p>
+        <p class="subtitle">This column is 200px wide</p>
+        <code> function(){
+          console.log("Will this work?");
+        }
+        </code>
+      </div>
+
+    </div>
+    <div class="column">
+        <div class="box">
+            <p class="title is-5">Flexible Column</p>
+            <p class="subtitle">This column will take up the remaining space available</p>
+          </div>
+    </div>
+  </div>
+
+  <div class="columns is-mobile">
+      <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
+        <code>is-three-quarters-mobile</code><br>
+        <code>is-two-thirds-tablet</code><br>
+        <code>is-half-desktop</code><br>
+        <code>is-one-third-widescreen</code><br>
+        <code>is-one-quarter-fullhd</code>
+      </div>
+      <div class="column">2</div>
+      <div class="column">3</div>
+      <div class="column">4</div>
+      <div class="column">5</div>
+    </div>
+    <div class="columns">
+      <div class="column has-background-success is-8 m-r-md m-b-md">
+        <p class="bd-notification is-primary has-text-light has-text-weight-bold has-text-centered">First column</p>
+      </div>
+      <div class="column has-background-success">
+          <p class="bd-notification is-primary has-text-light has-text-weight-bold has-text-centered">Second column with more content. This way we can see how the vertical alignement works</p>
+        </div>
+    </div>
+      
+</div>
   </body>
 </html>
