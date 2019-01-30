@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../custom.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Select2</title>
+  </head>
+  <body>
+    <div class="container m-t-md">
+      <form id="myform">
+        <div class="field">
+          <div class="select is-rounded is-primary">
+            <select name="girl" id="girl">
+              <option value="June">June</option>
+              <option value="Mary">Mary</option>
+              <option value="Mercy">Mercy</option>
+            </select>
+          </div>
+        </div>
+        <button class="button is-outlined is-rounded is-info">Submit Favorite</button>
+      </form>
+    </div>
+    <script>
+      const form = document.querySelector("#myform");
+      form.addEventListener("submit", handleformsubmit);
+      function handleformsubmit(e) {
+        e.preventDefault();
+        console.log(e);
+      }
+    </script>
+  </body>
+</html>
