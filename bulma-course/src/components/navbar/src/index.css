@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body {
   line-height: 1.5;
   font-size: 18px;
@@ -13,8 +16,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-.full-body{
-  background: url(./assets/react.svg) no-repeat;
-  
 }

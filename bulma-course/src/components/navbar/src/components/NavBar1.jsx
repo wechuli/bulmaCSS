@@ -11,7 +11,7 @@ const NavBar1 = () => {
   };
   return (
     <React.Fragment>
-      <nav className="navbar is-dark" role="navigation" aria-label="main navigation">
+      <nav className="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="https://bulma.io">
             <img
